@@ -1,6 +1,6 @@
-# Godisautomat #
+# Godisautomat 2#
 
-Den här uppgiften går ut på att skriva en del av mjukvaran i en godisautomat.
+Den här uppgiften går ut på att skriva en del av mjukvaran i en <b>större</b> godisautomat.
 
 ## Bedömningsmatris ##
 
@@ -37,13 +37,14 @@ ex "Choklad"
 Räcker inte pengarna till vald vara returnas strängen "Tyvörr för lite pengar"
 Om du har matat in för mycket pengar, lägger automaten till "Tack,Tack"
 
-Följande varor finns i automaten
+Aktuella varor lagras i en fil vending_storage.csv, med just nu följande varor.
 
 | Nr | Vara    | Pris  |
 |----|---------|-------|
 | 1  | Choklad | 10 kr |
 | 2  | Festis  |  8 kr |
-
+| 3  | Käck    |  5 kr |
+| 4  | Bilar   | 15 kr |
 
 
 
@@ -67,9 +68,9 @@ Programmet skall utvecklas med hjälp av testerna.
 
 ##### Ruby #####
 
-Skapa funktionen `handla` i `lib/godisautomat.rb`
+Skapa funktionen `handla` i `lib/vending_machine.rb.rb`
 
-Testerna finns i `spec/test_godisautomat.py.rb`.
+Testerna finns i `spec/article_spec.rb`.
 
 Kör `rspec` för att köra testerna.
 
